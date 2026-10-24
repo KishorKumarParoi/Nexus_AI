@@ -263,3 +263,22 @@ helm install nexus-ai ./k8s/helm/nexus-ai -n nexus-ai --create-namespace
 *One-click. Multi-cloud. Enterprise-grade.*
 
 </div>
+
+## 🚀 Zero-Touch Instant Cloud & Workstation Deployment
+
+Deploy this platform on **any fresh EC2 instance, cloud VM, or local machine with a single terminal command**:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Nexus_AI/main/bootstrap.sh | bash
+```
+
+### 🆘 One-Click Link For Whom It Is Not Working (Zero-Docker Standalone Mode)
+If Docker is not running or permissions are restricted, run this instant fail-safe native command:
+```bash
+curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Nexus_AI/main/bootstrap.sh | bash -s -- --standalone
+```
+
+### 🧹 Zero-Cost Instant Teardown ($0.00/hr):
+```bash
+./clear.sh
+```
