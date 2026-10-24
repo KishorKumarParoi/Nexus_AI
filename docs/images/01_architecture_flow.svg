@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad-nexus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18"/>
+      <stop offset="50%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#030610"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad-nexus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="accent-cyan-nexus" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="accent-purple-nexus" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="accent-emerald-nexus" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <filter id="shadow-nexus" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <marker id="arrow-nexus" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bg-grad-nexus)"/>
+
+  <!-- Matrix Grid -->
+  <g stroke="#1e293b" stroke-width="0.5" opacity="0.35">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="680"/>
+    <line x1="400" y1="0" x2="400" y2="680"/>
+    <line x1="600" y1="0" x2="600" y2="680"/>
+    <line x1="800" y1="0" x2="800" y2="680"/>
+    <line x1="1000" y1="0" x2="1000" y2="680"/>
+  </g>
+
+  <!-- Header -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="190" height="28" rx="14" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1"/>
+    <text x="95" y="18" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1.5">ENTERPRISE LAKEHOUSE</text>
+    
+    <text x="0" y="62" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="28" font-weight="800">NEXUS-AI Multi-Cloud Lakehouse &amp; Autonomous Agent Mesh</text>
+    <text x="0" y="86" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="14">Medallion Delta Lake, Production MLOps Drift Engine, Autonomous 5-Agent Mesh &amp; Next.js 14 Control Plane</text>
+  </g>
+
+  <!-- 1. Medallion Lakehouse -->
+  <g transform="translate(60, 170)" filter="url(#shadow-nexus)">
+    <rect width="230" height="420" rx="16" fill="url(#card-grad-nexus)" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="6" rx="3" fill="url(#accent-cyan-nexus)"/>
+    <text x="24" y="38" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1">1. DATA LAKEHOUSE</text>
+    <text x="24" y="65" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">Medallion Tiers</text>
+
+    <g transform="translate(20, 90)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Bronze Raw Landing</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Orders, Reviews, Partners</text>
+      <text x="16" y="66" fill="#f97316" font-family="-apple-system, sans-serif" font-size="11">Immutable Raw Payloads</text>
+    </g>
+
+    <g transform="translate(20, 195)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Silver Conformed</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Schema Validation &amp; SCD2</text>
+      <text x="16" y="66" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11">Snappy Parquet Columns</text>
+    </g>
+
+    <g transform="translate(20, 300)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Gold Business Marts</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Aggregated Feature Store</text>
+      <text x="16" y="66" fill="#eab308" font-family="-apple-system, sans-serif" font-size="11">Real-Time Delivery ETA</text>
+    </g>
+  </g>
+
+  <!-- Flow 1 -> 2 -->
+  <path d="M 290 380 L 340 380" stroke="#38bdf8" stroke-width="2.5" fill="none" marker-end="url(#arrow-nexus)" stroke-dasharray="4 4"/>
+
+  <!-- 2. MLOps Engine -->
+  <g transform="translate(345, 170)" filter="url(#shadow-nexus)">
+    <rect width="230" height="420" rx="16" fill="url(#card-grad-nexus)" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="6" rx="3" fill="url(#accent-emerald-nexus)"/>
+    <text x="24" y="38" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1">2. PRODUCTION MLOPS</text>
+    <text x="24" y="65" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">Drift &amp; Inference</text>
+
+    <g transform="translate(20, 90)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Delivery ETA Predictor</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">XGBoost &amp; CatBoost Ensembles</text>
+      <text x="16" y="66" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">P95 Latency &lt; 8ms</text>
+    </g>
+
+    <g transform="translate(20, 195)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Drift Detection</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Evidently / KS Two-Sample</text>
+      <text x="16" y="66" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11">Auto-Trigger Retraining</text>
+    </g>
+
+    <g transform="translate(20, 300)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Prometheus Telemetry</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Grafana Live Monitoring</text>
+      <text x="16" y="66" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11">SLO Error Budgets</text>
+    </g>
+  </g>
+
+  <!-- Flow 2 -> 3 -->
+  <path d="M 575 380 L 625 380" stroke="#34d399" stroke-width="2.5" fill="none" marker-end="url(#arrow-nexus)" stroke-dasharray="4 4"/>
+
+  <!-- 3. Autonomous 5-Agent Mesh -->
+  <g transform="translate(630, 170)" filter="url(#shadow-nexus)">
+    <rect width="230" height="420" rx="16" fill="url(#card-grad-nexus)" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="6" rx="3" fill="url(#accent-purple-nexus)"/>
+    <text x="24" y="38" fill="#c084fc" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1">3. AGENT MESH</text>
+    <text x="24" y="65" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">5-Agent Ecosystem</text>
+
+    <g transform="translate(20, 90)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Data &amp; Analyst Agents</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Agent 1: NL2SQL &amp; Schema</text>
+      <text x="16" y="66" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11">Agent 2: Business Trends</text>
+    </g>
+
+    <g transform="translate(20, 195)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Security &amp; MLOps Agents</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Agent 3: Automated MLOps</text>
+      <text x="16" y="66" fill="#ef4444" font-family="-apple-system, sans-serif" font-size="11">Agent 4: AI Security Guard</text>
+    </g>
+
+    <g transform="translate(20, 300)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Voice Dispatch Agent</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Agent 5: WebRTC / Audio</text>
+      <text x="16" y="66" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11">Webhook Incident Alerting</text>
+    </g>
+  </g>
+
+  <!-- Flow 3 -> 4 -->
+  <path d="M 860 380 L 910 380" stroke="#c084fc" stroke-width="2.5" fill="none" marker-end="url(#arrow-nexus)" stroke-dasharray="4 4"/>
+
+  <!-- 4. Control Plane & Infra -->
+  <g transform="translate(915, 170)" filter="url(#shadow-nexus)">
+    <rect width="230" height="420" rx="16" fill="url(#card-grad-nexus)" stroke="#334155" stroke-width="1.5"/>
+    <rect x="0" y="0" width="230" height="6" rx="3" fill="url(#accent-cyan-nexus)"/>
+    <text x="24" y="38" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1">4. CONTROL PLANE</text>
+    <text x="24" y="65" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="18" font-weight="700">Cloud &amp; UI</text>
+
+    <g transform="translate(20, 90)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Next.js 14 Glassmorphism</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">Live Observability Portal</text>
+      <text x="16" y="66" fill="#38bdf8" font-family="-apple-system, sans-serif" font-size="11">Port 3000 Front-End</text>
+    </g>
+
+    <g transform="translate(20, 195)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">Kubernetes &amp; Terraform</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">GKE / EKS / AKS Multi-Cloud</text>
+      <text x="16" y="66" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">Auto-Scaling Node Pools</text>
+    </g>
+
+    <g transform="translate(20, 300)">
+      <rect width="190" height="85" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" fill="#f8fafc" font-family="-apple-system, sans-serif" font-size="14" font-weight="600">One-Click Deploy</text>
+      <text x="16" y="48" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">bootstrap.sh | deploy.sh</text>
+      <text x="16" y="66" fill="#c084fc" font-family="-apple-system, sans-serif" font-size="11">Zero-Cost Teardown ($0)</text>
+    </g>
+  </g>
+
+  <!-- Footer Banner -->
+  <g transform="translate(60, 620)">
+    <text x="0" y="20" fill="#64748b" font-family="-apple-system, sans-serif" font-size="12">Single-Command Cloud Bootstrap: curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Nexus_AI/main/bootstrap.sh | bash</text>
+    <text x="1080" y="20" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12" text-anchor="end" font-weight="600">✓ $0.00 Teardown Verified (clear.sh)</text>
+  </g>
+</svg>

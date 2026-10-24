@@ -4,14 +4,27 @@
 
 ### Enterprise Multi-Cloud Lakehouse + MLOps + AI Agent Mesh
 
+[![Architecture Flow](docs/images/01_architecture_flow.svg)](docs/images/01_architecture_flow.svg)
+
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://python.org)
 [![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js&logoColor=white)](https://nextjs.org)
 [![Go](https://img.shields.io/badge/Go-1.22-00ADD8?logo=go&logoColor=white)](https://go.dev)
 [![Terraform](https://img.shields.io/badge/Terraform-Multi--Cloud-7B42BC?logo=terraform&logoColor=white)](https://terraform.io)
 [![K8s](https://img.shields.io/badge/Kubernetes-GPU-326CE5?logo=kubernetes&logoColor=white)](https://kubernetes.io)
+[![Architecture Blueprint](https://img.shields.io/badge/Architecture-Enterprise_Blueprint-blue?style=for-the-badge)](ARCHITECTURE.md)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**One-click deployment** of a production-grade AI platform spanning ETL pipelines, ML training, autonomous agent mesh, multi-cloud infrastructure, and a premium dashboard — all from a single `./run_all.sh` command.
+**One-click deployment** of a production-grade AI platform spanning ETL pipelines, ML training, autonomous agent mesh, multi-cloud infrastructure, and a premium dashboard.
+
+---
+
+### ⚡ One-Click Cloud Bootstrap (Zero-Touch)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/KishorKumarParoi/Nexus_AI/main/bootstrap.sh | bash
+```
+
+---
 
 </div>
 
